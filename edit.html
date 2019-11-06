@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/markdown-it.min.js"></script>
+    <script src="js/diary.js"></script>
+    <title>Edit - Diary.</title>
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
+    <a class="navbar-brand logo_font" href="index.html"><b>Diary.</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_collapse" aria-controls="nav_collapse" aria-expanded="false" aria-label="toggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav_collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="alldiaries.html">All Diaries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+        <li class="dropdown-divider"></li>
+        <div class="nav-item">
+            <button type="button" class="btn btn-outline-primary"><a href="http://support.typora.io/Markdown-Reference/">Markdown Reference</a></button>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" id="c_NewItem">
+                <div class="card-body">
+                    <h5 class="card-title">Editing...</h5>
+                    <br />
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="fo_NewItem" placeholder="Write down your diary here..." rows="6"></textarea>
+                        </div>
+                        <button id="b_edit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="d-md-none"><p> </p></div>
+            <div class="card text-left pas">
+                <div class="card-header"><nav>
+                    <button type="button" class="btn btn-outline-primary" id="b_download">Download The Markdown File</button>
+                    <button class="btn btn-outline-danger" id="b_delete">Delete This Diary</button>
+                </nav>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-light title">
+                        <p class="italic_font" id="pre_number">Now Loading...</p>
+                        <p class="font-italic" id="pre_date"></p>
+                    </div>
+                    <div class="container" id="preview"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#"><button type="button" class="btn btn-primary bu btn-circle"><i class="fa fa-angle-up"></i></button></a>
+</body>
+</html>

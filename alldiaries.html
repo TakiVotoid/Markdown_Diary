@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/markdown-it.min.js"></script>
+    <script src="js/diary.js"></script>
+    <script src="js/alldiaries.js"></script>
+    <title>All Diaries - Diary.</title>
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
+    <a class="navbar-brand logo_font" href="index.html"><b>Diary.</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_collapse" aria-controls="nav_collapse" aria-expanded="false" aria-label="toggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav_collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="alldiaries.html">All Diaries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+        <li class="dropdown-divider"></li>
+        <div class="nav-item">
+            <button type="button" class="btn btn-outline-primary"><a href="http://support.typora.io/Markdown-Reference/">Markdown Reference</a></button>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid con">
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic" id="pre_number">Now Loading...</h1>
+            <p class="lead my-3" id="pre_date"></p>
+        </div>
+    </div>
+    <div class="input-group mb-3" id="i_jump">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button" id="b_jump">Jump to No.</button>
+        </div>
+        <input id="n_jump" type="text" class="form-control" placeholder="Diary Number" aria-describedby="description">
+        <div class="input-group-append">
+            <span class="input-group-text" id="description">Now Loading...</span>
+        </div>
+    </div>
+    <div class="card text-left pas" id="c_preview">
+        <div class="card-header">
+            <nav>
+                <button type="button" class="btn btn-outline-primary" id="b_download">Download Markdown File</button>
+                <button type="button" class="btn btn-outline-primary" id="b_edit">Edit</button>
+                <button class="btn btn-outline-danger" id="b_delete">Delete The Diary</button>
+            </nav>
+        </div>
+        <div class="card-body">
+            <div class="container" id="preview"></div>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-outline-primary" id="b_prev">Previous</button>
+            <button type="button" class="btn btn-outline-primary" id="b_next">Next</button>
+        </div>
+    </div>
+</div>
+<a href="#"><button type="button" class="btn btn-primary bu btn-circle"><i class="fa fa-angle-up"></i></button></a>
+</body>
+</html>

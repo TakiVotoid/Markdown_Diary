@@ -1,0 +1,65 @@
+.main_frame{
+    margin: 80px 30px 30px 15px;
+}
+
+@font-face{
+    font-family: cour;
+    src: url("../fonts/courier.ttf");
+}
+
+
+@font-face{
+    font-family: fzks;
+    src: url("../fonts/fzks.ttf");
+}
+
+.NewItem{
+    height: 100%;
+}
+
+.logo_font{
+    font-family: cour;
+}
+
+.chinese_font{
+    font-family: fzks;
+}
+
+.pas{
+    height: 100%;
+}
+
+.italic_font{
+    font-family: cour;
+    font-size: 1.9rem;
+}
+
+.title{
+    line-height: 100%;
+}
+
+.bu{
+    position: fixed;
+    right: 50px;
+    bottom:50px
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.con{
+    width: auto;
+    max-width: 1280px;
+    padding: 0 15px;
+}
+
+img{
+    width: 100%;
+}

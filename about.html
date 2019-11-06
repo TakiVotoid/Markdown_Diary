@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/markdown-it.min.js"></script>
+    <script src="js/diary.js"></script>
+    <script src="js/about.js"></script>
+    <title>About - Diary.</title>
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<nav class="navbar navbar-light bg-white navbar-expand-md sticky-top">
+    <a class="navbar-brand logo_font" href="index.html"><b>Diary.</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_collapse" aria-controls="nav_collapse" aria-expanded="false" aria-label="toggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav_collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="alldiaries.html">All Diaries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+        <li class="dropdown-divider"></li>
+        <div class="nav-item">
+            <button type="button" class="btn btn-outline-primary"><a href="http://support.typora.io/Markdown-Reference/">Markdown Reference</a></button>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid con">
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 chinese_font"><i>关于</i></h1>
+            <p class="lead my-3 chinese_font">简洁易用的日记本Web-app/Markdown实时编辑器</p>
+            <br />
+            <h3 class="chinese_font">功能</h3>
+            <ul class="chinese_font">
+                <li>Markdown的实时预览/编辑</li>
+                <li>时间记录和文章修改/删除</li>
+                <li>以.md格式导出下载编辑的内容</li>
+                <li>内容本身不会上传至服务器</li>
+            </ul>
+            <h3 class="chinese_font">改进点</h3>
+            <ul class="chinese_font">
+                <li>增加账户功能，提供加密的云存储服务</li>
+                <li>增加上传图片等机能</li>
+            </ul>
+            <h3 class="chinese_font">采用的技术&致谢</h3>
+            <ul class="chinese_font">
+                <li><i>Markdown-It</i></li>
+                <li><i>Bootstrap</i></li>
+            </ul>
+            <br />
+            <br />
+            <p class="font-italic">Created with 💗 by Taki.</p>
+        </div>
+        <button class="btn btn-outline-danger" id="b_delete" data-toggle="modal" data-target="#m_remove">清空一切存储的信息</button>
+    </div>
+</div>
+
+<div class="modal fade" id="m_remove" tabindex="-1" role="dialog" aria-labelledby="mt_remove" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mt_remove">清空一切存储的信息</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    你确定要这样做吗，操作是不可逆的。
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="b_remove">是</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">否</button>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#"><button type="button" class="btn btn-primary bu btn-circle"><i class="fa fa-angle-up"></i></button></a>
+</body>
+</html>
